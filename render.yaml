@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: tts-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7499260753:AAF3IZzDDL7bStifSGvseTXBm-d7EqHZI9U
